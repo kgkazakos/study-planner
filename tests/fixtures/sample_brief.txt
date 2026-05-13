@@ -1,0 +1,10 @@
+title: Mobile Checkout UX Study
+method: qualitative
+audience: Mobile app users aged 25-45 who purchased in the last 6 months
+weeks: 8
+team: 2
+budget: 12000
+questions:
+Why do users abandon the checkout flow before completing a purchase?
+What is the biggest source of friction in the payment step?
+How do first-time buyers differ from repeat purchasers in their mental model?

@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "study-planner"
+version = "0.1.0"
+description = "AI-assisted research study scoping, timeline generation, and resource estimation — CPR Orbital #24"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Kostas Kazakos", email = "kostas@cpr.tools" }]
+keywords = ["ux-research", "research-planning", "ai", "product-research", "cpr"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+    "dspy-ai>=2.4",
+    "litellm>=1.30",
+]
+
+[project.optional-dependencies]
+ui = [
+    "streamlit>=1.32",
+    "plotly>=5.20",
+    "pandas>=2.0",
+]
+dev = [
+    "pytest>=7.4",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+study-planner = "study_planner.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/kgkazakos/study-planner"
+Repository = "https://github.com/kgkazakos/study-planner"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["study_planner*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
