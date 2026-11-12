@@ -151,7 +151,7 @@ Set the appropriate environment variable before running:
 ```bash
 export ANTHROPIC_API_KEY="..."       # anthropic/claude-opus-4-6, claude-sonnet-4-6
 export OPENAI_API_KEY="..."          # openai/gpt-5.5, gpt-5.4-mini
-export GEMINI_API_KEY="..."          # gemini/gemini-3.1-pro-preview, gemini-2.5-flash
+export GEMINI_API_KEY="..."          # gemini/gemini-4-argon, gemini-2.5-flash
 ```
 
 ---
