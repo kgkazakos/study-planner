@@ -140,7 +140,7 @@ with st.sidebar:
             "openai/gpt-5.5",
             "openai/gpt-5.4-mini",
             "── Google ──",
-            "gemini/gemini-3.1-pro-preview",
+            "gemini/gemini-4-argon",
             "gemini/gemini-2.5-flash",
         ],
         label_visibility="collapsed",
